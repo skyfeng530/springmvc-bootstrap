@@ -9,7 +9,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.TransactionConfiguration;
-import com.demo.model.models.Authority;
 import com.demo.service.interfaces.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)

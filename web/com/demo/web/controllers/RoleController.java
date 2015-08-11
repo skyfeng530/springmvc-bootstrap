@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import net.sf.json.JSONArray;
 import net.sf.json.JsonConfig;
+
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -32,7 +34,7 @@ import com.demo.web.models.extension.RoleModelExtension;
 import com.demo.web.models.extension.TreeModelExtension;
 
 @Controller
-//@Scope("prototype")// 设置返回实例的方式 prototype or singleton
+@Scope("prototype")// 设置返回实例的方式 prototype or singleton
 @RequestMapping(value = "/role")
 public class RoleController extends BaseController {  
 	

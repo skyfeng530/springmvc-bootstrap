@@ -75,8 +75,8 @@
   	</bean>
 
     <!-- 开启注解事务 只对当前配置文件有效 注解事务和下面的声明式事务只需选择其中一种，推荐用声明式事务 -->
-	<aop:aspectj-autoproxy expose-proxy="true"/>	
-  	<tx:annotation-driven transaction-manager="h4TManager"/>
+	<!-- <aop:aspectj-autoproxy expose-proxy="true"/>	
+  	<tx:annotation-driven transaction-manager="h4TManager"/> -->
   	
   	<!-- 声明式事务配置开始 -->
     <bean id="h4TManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">

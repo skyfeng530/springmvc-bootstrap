@@ -12,7 +12,9 @@ import com.infrastructure.project.common.exception.ValidatException;
 @RequestMapping(value = "/home")
 public class HomeController extends BaseController {  
 
-	//@AuthPassport
+	
+	
+	@AuthPassport
     @RequestMapping(value = "/hello")
     public ModelAndView hello() throws EntityOperateException, ValidatException, SQLException { 
 
